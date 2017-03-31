@@ -1,0 +1,504 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Quattrocento', serif;
+font-family: 'Playball', cursive;
+*/
+
+
+/********************************************  icone import link *******************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+/********************************************  fluid  *******************************************************************/
+
+.fluid-type {
+    font-size: calc(17px + 8 * ((100vw - 250px) / 1000));
+}
+
+
+/********************************************  uxiliary classes  *******************************************************************/
+a{
+  text-decoration: none;
+  color: none;
+}
+.center {
+    text-align: center;
+}
+
+.bg_cover {
+    background-image: url('images/bg.jpg');
+    background-repeat: repeat-y;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -50;
+}
+
+
+/******************************************************** outlines *******************************************************/
+
+
+/*
+.header .container_fluid .logo{outline: 1px solid black;}
+ .header .container_fluid p{outline: 3px solid red;}
+*/
+
+
+/******************************************************** body *******************************************************/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #ffffff;
+}
+
+
+/**************************************************  burger_button *************************************************************/
+.top-strip{
+    background-color: bisque;
+}
+
+.burger_menu {
+    display: none;
+    font-size: 10px;
+    letter-spacing: 1.1px;
+}
+
+.burger {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 70px;
+    right: 0px;
+}
+
+.burger>li {
+    list-style: none;
+    position: relative;
+}
+
+.burger>li>a {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.burger>li>a:hover {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+
+/**************************************************  Header_top *************************************************************/
+
+.header_top {
+    background-color: #FFC107;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header_top .burger_menu {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+}
+
+.header_top .tag {
+    color: white;
+    opacity: .9;
+    background-color: #262626;
+    width: 70px;
+    height: 30px;
+    display: inline-block;
+    float: right;
+    margin: 5px 10px;
+    padding: 5px 0px;
+    border-radius: 2px;
+    text-align: center;
+    box-shadow: inset 0 0 0 50px rgba(255, 255, 255, 0.1);
+    transition: all .2s;
+}
+
+.header_top .tag a {
+    color: white;
+    text-decoration: none;
+}
+
+.header_top .tag:hover {
+    box-shadow: inset 0 0 0 0px rgba(255, 255, 255, 0.1)
+}
+
+
+/**************************************************  Header  *************************************************************/
+
+.header {
+    padding: 0 50px;
+}
+
+.header .logo {
+    padding: 10px 20px;
+}
+
+.header .logo .sub_logo {
+    margin: 0 auto;
+    width: 150px;
+    height: 180px;
+    background: url('images/logo.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .heading img {
+  max-width: 100%;
+}
+
+
+/**************************************************  navigation *************************************************************/
+
+.navigation ul {
+    display: block;
+    width: 700px;
+    float: right;
+    overflow: hidden;
+    border-radius: 4px 0 0 4px;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+.navigation li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s ease;
+}
+
+
+.navigation li a {
+  position: relative;
+    font-size: 15px;
+    display: block;
+    padding: 12px 35px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.81);
+    position: relative;
+    transition: all 0.4s ease;
+}
+.navigation li:last-child a:after{
+     content: ' ';
+     height: 0;
+     position: absolute;
+     width: 0;
+     border: 5px solid transparent;
+     border-top-color: #ffffff;
+     top: 45%;
+     right: 15%;
+}
+.navigation li a span{
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #ffd708;
+  transition: all 0.6s ease;
+
+}
+.navigation li:hover a {
+ color: #ffd708;
+ transition: all 0.4s ease;
+}
+
+.navigation li:hover a span{
+  width: 100%;
+}
+
+
+/***************************************************  slider  ***************************************************************/
+
+.slider_stop{
+  display: none;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  margin: 20px auto;
+  background: url('data1/images/28241meditationspiritualcamerongray.jpg') center center no-repeat;
+  background-size: cover;
+
+}
+
+
+#wowslider-container1 {
+    margin: 30px auto 10px;
+}
+
+/***************************************************  middle secsion  ***************************************************************/
+.middle_section .content{
+  font-size: 17px;
+  padding: 20px 10px;
+  background-image: linear-gradient(#ff5c00, #f67d3a);
+  text-align: center;
+}
+
+
+
+/***************************************************  middel bar  ***************************************************************/
+
+ul {
+    margin: 0;
+}
+
+.middle {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-color: #333;
+  overflow: hidden;
+}
+.parallax{
+
+  position: absolute;
+
+  z-index: 1;
+  width: 100%;
+  height: 250%;
+  background-image: url('images/parallax.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main{
+  position: absolute;
+ z-index: 2;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 30px 30px;
+}
+.main .square{
+  width: 200px;
+
+  }
+.main .square .top{
+
+    background-image: linear-gradient(#ec3200, #ff5122);
+    padding: 5px 10px;
+    color: #ffffff;
+}
+.main p{
+  font-size: 12px;
+  margin-top: -8px;
+}
+.middle ul {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    border: 0;
+}
+
+.menu li {
+    list-style: none;
+    position: relative;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+.menu>li:hover>ul {
+    display: block;
+}
+
+.menu>li:hover>ul>li:hover>ul {
+    display: block;
+}
+
+.menu li a {
+    background-color: transparent;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-right: 3px solid;
+    border-right-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+}
+.menu li a:before{
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 5px solid transparent;
+  border-left-color: #ffffff;
+  left: 5%;
+  top: 38%;
+  }
+.menu li:nth-of-type(odd) a{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu>li a:after {
+    transition: 0.3s ease;
+    visibility: hidden;
+    transform: scaleX(0);
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu>li a:hover:after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+/***************************************************  gallery *****************************************************************/
+
+.gallery img {
+    cursor: pointer;
+    border: 5px solid white;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.gallery img:hover {
+    border-color: #ff7200;
+    box-shadow: 0 0 1px 2px #ff4e00;
+    z-index: 2;
+}
+
+.gallery img {
+  width: 100%;
+    transition: all .3s ease;
+}
+
+.gallery img:hover{
+    transform: scale(1.1);
+
+}
+
+
+
+
+/***************************************************  footer *****************************************************************/
+
+
+.footer {
+    background-color: #FFC107;
+    color: white;
+    padding: 40px 100px;
+}
+.footer h4{
+  font-size: 25px;
+}
+.footer ul {
+font-size: 11px;
+line-height: 1.4em;
+letter-spacing: 1px;
+}
+.footer ul li{
+  list-style: none;
+}
+
+.footer .item3 ul li{
+  height: 25px;
+
+}
+.footer .item4 ul li{
+  height: 50px;
+}
+.footer a{
+
+  color: white;
+}
+.footer i{
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+}
+.footer li span{
+  width: 20px;
+  height: 20px;
+
+}
+.footer .clear{
+  display: none;
+  content: "";
+  width: 100%;
+  height: 0%;
+  clear: both;
+}
+.footer div[class*="item"]{
+  padding-top: 20px;
+  position: relative;
+  height: 210px;
+
+}
+.footer div[class*="item"]:after{
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.51);
+  content: "";
+  bottom: 0px;
+  left: 0px;
+
+}
+
+/***************************************************  @media *****************************************************************/
+
+@media (max-width: 996px) {
+    .backcover {
+        left: 5%;
+        right: 5%;
+    }
+.footer .clear{
+  display: table;
+}
+
+}
+
+@media (max-width: 768px) {
+
+
+  .slider_stop{
+    display: block;
+  }
+
+  #wowslider-container1{
+    display: none;
+  }
+    .burger_menu {
+        display: block;
+    }
+    .navigation {
+        display: none;
+    }
+    .header .header_top {
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+
+}
